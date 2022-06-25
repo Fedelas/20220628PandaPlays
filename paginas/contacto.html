@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- hace que se vea carateres especiales, ñ y tildes -->  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibles con edge -->  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport: para poder adaptarlo al cel -->  
+    <title>Panda plays</title>
+    <link rel="stylesheet" href="../estilos/stylesheet.css">
+</head>
+<body>
+
+    <div class="page">
+        <header class="page__header">
+            <a href="../index.html">
+                <img src="../multimedia/logoPandaPlays.png" alt="Logo Panda Plays" id="logo">
+             </a>
+            <!-- Falta agregar search bar y el logo de usuario con el link a pagina de registros-->
+    
+        </header>
+         <nav>
+            <ul>
+                <li><a href="pnpQueEs.html">PNP - Que es</a></li>
+                <li><a href="pnpQueEs.html" target="#juegos">JUEGOS</a></li>
+                <li><a href="tips.html">TIPS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="https://www.paypal.com/donate/?hosted_button_id=U2X23U7RE8ZE2">DONACIONES</a></li>
+            
+            </ul> 
+        </nav>  
+
+        <section class="page__columnaUnica">
+            <h1 class="page__titulo">CONTACTANOS</h1>
+        </section>
+
+
+        <section class="page__columnaUnica--centradaConPadding">
+            <div class="columnaFormulario">
+                <div class="col-10">
+                    <label for="nombreYApellido">Nombre:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" placeholder="Nombre y apellido" name="nombreYApellido">
+                </div>
+            </div>
+            <div class="columnaFormulario">
+                <div class="col-10">
+                    <label for="email">Correo:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" placeholder="correo electronico" name="email">
+                </div>
+            </div>
+            <div class="columnaFormulario">
+                <div class="col-10">
+                    <label for="juego">Juego</label>
+                </div>
+                <div class="col-90">
+                    <select id="JuegoElegido" name="Juegos">
+                        <option value="Juego1">Juego 1</option>
+                        <option value="Juego2">Juego 2</option>
+                        <option value="Juego3">Juego 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="columnaFormulario">
+                <textarea placeholder="Esbribi tu consulta"></textarea>
+            </div>
+        
+            <br>
+            <input type="reset" value="BORRAR">
+            <input type="submit" value="ENVIAR">
+            </form>
+        
+        </section>
+
+
+        <section class="page__columnaUnica">
+            <h2>NOVEDADES</h2>
+            <!-- Van a ir pasando distintos juegos-->
+        </section>
+
+             
+    
+        <footer class="footer"> <!-- divido en 3  columnas: seguinos en, contacto y colabora y luego debajo el copyright-->
+            <div class="footer__columnasTres" >
+                <h3>Seguinos en</h3>
+                    <img src="../multimedia/logoYOUTUBE.png" alt="Logo YOUTUBE" height="30">
+                    <img src="../multimedia/logoIG.png" alt="Logo INSTAGRAM" height="30">
+            </div>
+        
+            <div class="footer__columnasTres">
+                <h3>Contacto</h3>
+                <a href="contacto.html">
+                    <img src="../multimedia/iconoContacto.png" alt="Link Contacto">
+                </a>
+            </div>
+                
+            <div class=" footer__columnasTres">
+                <!-- Boton PAYPAL falta agregarlo a CSS como clase-->
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="U2X23U7RE8ZE2" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                </form>
+                
+            </div>
+        
+            <div class="footer__copyright">
+                <h4>copyright--Federico Lasserre / Jun - 2022</h4>
+            </div>
+       
+        </footer>
+
+   </div>
+
+   
+</body>
+</html>

@@ -1,0 +1,269 @@
+/*------------------------------
+ ESTILOS GENERALES
+ ---------------------------*/
+
+/* RESETEO CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* COLORES --- YA CHEQUADOS QUE NO DAN CONFLICTO CON DALTONISMO*/
+/*
+{ color: #5204BF; } nav
+{ color: #3C038C; } hover
+{ color: #260259; } para fondo, logo e iconos 
+{ color: #05C7F2; } para bordes
+{ color: #BF1111; } para alerta */
+
+
+
+body {
+  /* ESTILO DE FUENTES*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  /*BACKGROUND*/
+  background-color: #05C7F2;
+  
+  
+   
+}
+
+
+/*ESTILOS EN BLOQUE PAGINA*/
+
+.page{
+  background-color: white;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  /* position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0;
+  right: 0; */
+  
+
+}
+
+.page__header{
+  padding: 10px;
+}
+
+.page__banner{
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page__titulo{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.page__tituloSecciones{
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.page__columnaUnica{
+  padding: 20px;
+}
+
+.page__columnaUnica--centrada{
+  text-align: center;
+  position: center;
+}
+
+
+
+
+/*------------------------------
+ ENCABEZADO
+---------------------------*/
+/*LOGO*/
+#logo {
+  top: 10px;
+  left: 10px;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 0.5em;
+}
+
+
+/*NAV BAR*/
+nav{
+  background-color: #5204BF;
+  text-align: right;
+  padding: 20px;
+  position: relative;
+}
+nav li {
+  display: inline-block;
+  margin: 0px 0px;
+  padding-top: 1px;
+}
+nav li a{
+  color: white;
+  padding: 11px;
+  text-decoration: none;
+  font-family: arial;
+}
+
+nav li a:hover{
+  background-color: #3C038C;
+  padding: 20px 11px;
+}
+
+
+
+/*------------------------------
+ FOOTER
+---------------------------*/
+
+
+.footer__columnasTres{
+  display: inline-block;
+  
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  vertical-align: top;
+    
+}
+
+.footer__copyright{
+  display: inline;
+  text-align: center;
+}
+
+
+
+/*------------------------------
+PNP _ QUE ES
+---------------------------*/
+
+/*TABLA*/
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table td,
+.table th {
+  border: 1px solid #05C7F2;
+  padding: 8px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #3C038C;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #5204BF;
+  color: white;
+}
+
+
+/*------------------------------
+CONTACTO
+---------------------------*/
+
+.columnaFormulario{
+  width:100%;
+}
+
+.page__columnaUnica--centradaConPadding{
+  text-align: center;
+  position: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=text], input[type=email] , select, textarea {
+  border: 2px solid #05C7F2;
+  border-radius: 4px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.col-10 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+  text-align: left;
+}
+
+.col-90 {
+  float: left;
+  width: 90%;
+  margin-top: 6px;
+}
+
+/*Para eliminar el problema del float*/
+.columnaFormulario:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*FALTA DEFINIR ESTILO BOTONES*/
+
+
+/*------------------------------
+BLOG
+---------------------------*/
+
+/*ACA VA A IR EL FORMATO DEL BLOG*/
+
+/*------------------------------
+TIPS
+---------------------------*/
+
+/*toma la clase page y crea un nuevo elemento: columnaDos, esto despues se va a ver modificado con el uso de flex*/
+.page__columnaUnica--divididaEnDos{
+  float: left;
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  
+}
+
+/*Crear una clase Row para eliminar el problema del float, esto no va a ser usado en el futuro*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+

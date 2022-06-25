@@ -1,0 +1,19 @@
+https://www.philibertnet.com/en/
+
+https://boardgames.com/search/pnp
+
+https://thesoloboardgamer.com/solo-print-and-play/
+
+https://www.pnpparadise.com/workshop
+
+PARA HACER CARDS
+https://www.quackit.com/html/html_editors/scratchpad/?example=/css/flexbox/examples/flexbox_cards_align-items_stretch
+
+PARA HACER NAV RESPONSIVE
+https://www.quackit.com/html/html_editors/scratchpad/?example=/css/flexbox/examples/flexbox_form_example_6
+
+GENERAL 
+https://www.quackit.com/css/flexbox/examples/flexbox_grid_examples.cfm
+
+GRID + FLEX
+https://ishadeed.com/article/grid-layout-flexbox-components/#:~:text=Combining%20CSS%20Grid%20and%20Flexbox%20Not%20only%20each,flexbox%20is%20used%20for%20the%20card%20component%20itself.
