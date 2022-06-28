@@ -7,27 +7,46 @@
     <title>Panda plays</title>
     <link rel="stylesheet" href="../estilos/stylesheet.css">
 </head>
-<body>
 
-    <div class="page">
-        <header class="page__header">
-            <a href="../index.html">
-                <img src="../multimedia/logoPandaPlays.png" alt="Logo Panda Plays" id="logo">
-             </a>
-            <!-- Falta agregar search bar y el logo de usuario con el link a pagina de registros-->
-    
-        </header>
-         <nav>
-            <ul>
-                <li><a href="pnpQueEs.html">PNP - Que es</a></li>
-                <li><a href="pnpQueEs.html" target="#juegos">JUEGOS</a></li>
-                <li><a href="tips.html">TIPS</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="https://www.paypal.com/donate/?hosted_button_id=U2X23U7RE8ZE2">DONACIONES</a></li>
+
+<body id="bodyGrilla">
+
+    <header class="header">
+        <section class="container container-nav"> <!-- hago un contenedor madre que se subdivide en logo a la izquierda y el searchBar y el nav a la derecha-->
+            <div class="logoIzquierdo-10">
+                <a href="../index.html">
+                    <img src="../multimedia/logoPandaPlays.png" alt="Logo Panda Plays" id="logo"> 
+                 </a>
+            </div>
             
-            </ul> 
-        </nav>  
+            <div class="columnaDerecha-90">
+                <!-- Falta agregar search bar y el logo de usuario con el link a pagina de registros-->
+                
 
+                <nav>
+                    <ul>
+                        <li><a href="pnpQueEs.html">PNP - Que es</a></li>
+                        <li><a href="pnpQueEs.html" target="#juegos">JUEGOS</a></li>
+                        <li><a href="tips.html">TIPS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="https://www.paypal.com/donate/?hosted_button_id=U2X23U7RE8ZE2">DONACIONES</a></li>
+                    
+                    </ul> 
+                </nav> 
+
+
+            </div>
+            
+        </section>
+
+        
+    </header>
+
+
+
+    
+    <div class="page">
+           
         <section class="page__columnaUnica">
             <h1 class="page__titulo">CONTACTANOS</h1>
         </section>
@@ -79,23 +98,23 @@
             <h2>NOVEDADES</h2>
             <!-- Van a ir pasando distintos juegos-->
         </section>
-
-             
+    </div>
     
-        <footer class="footer"> <!-- divido en 3  columnas: seguinos en, contacto y colabora y luego debajo el copyright-->
+    <footer class="footer"> <!-- divido en 3  columnas: seguinos en, contacto y colabora y luego debajo el copyright-->
+        <div class="columna_uno--horizontal">
             <div class="footer__columnasTres" >
                 <h3>Seguinos en</h3>
-                    <img src="../multimedia/logoYOUTUBE.png" alt="Logo YOUTUBE" height="30">
-                    <img src="../multimedia/logoIG.png" alt="Logo INSTAGRAM" height="30">
+                    <img src="multimedia/logoYOUTUBE.png" alt="Logo YOUTUBE" height="30">
+                    <img src="multimedia/logoIG.png" alt="Logo INSTAGRAM" height="30">
             </div>
         
             <div class="footer__columnasTres">
                 <h3>Contacto</h3>
-                <a href="contacto.html">
-                    <img src="../multimedia/iconoContacto.png" alt="Link Contacto">
+                <a href="paginas/contacto.html">
+                    <img src="multimedia/iconoContacto.png" alt="Link Contacto">
                 </a>
             </div>
-                
+
             <div class=" footer__columnasTres">
                 <!-- Boton PAYPAL falta agregarlo a CSS como clase-->
                 <form action="https://www.paypal.com/donate" method="post" target="_top">
@@ -104,15 +123,13 @@
                 </form>
                 
             </div>
-        
-            <div class="footer__copyright">
-                <h4>copyright--Federico Lasserre / Jun - 2022</h4>
-            </div>
-       
-        </footer>
+        </div>
+    
+        <div class="footer__copyright">
+            <h4>copyright--Federico Lasserre / Jun - 2022</h4>
+        </div>
 
-   </div>
-
-   
 </body>
 </html>
+
+
