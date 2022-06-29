@@ -307,23 +307,12 @@ TIPS
 
 /*toma la clase page y crea un nuevo elemento: columnaDos, esto despues se va a ver modificado con el uso de flex*/
 .page__columnaUnica--divididaEnDos{
-  float: left;
-  width: 50%;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
   
-}
-
-/*Crear una clase Row para eliminar el problema del float, esto no va a ser usado en el futuro*/
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 
 
 /* TABLET RD */
@@ -358,10 +347,7 @@ TIPS
     margin: 0.8em 0px;
   }
 
-  .page{
-    height: 450px;
-  }
-
+  
   .footer{
     grid-area: footer;
     background-color: white;
@@ -382,11 +368,12 @@ TIPS
 
 /* CELULAR RD */
 @media screen and (max-width: 500px){
-  .nav{
+  .nav ul li{
     padding: 0px;
   }
  
  
+
   .page__banner{
     display: none; /*Voy a ocultar el banner*/
   }
@@ -405,22 +392,9 @@ TIPS
 
 }
   
+
+/*
   
-  /*
-  
-  #bodyGrilla{
-      grid-template-columns: 1fr;
-      align-items: center;
-      grid-template-areas:
-      "header"
-       "page"
-      "footer";
-      grid-template-rows: auto 1fr auto;
-
-
-  }
-
-
   .container {
     text-align: center
   }
@@ -468,6 +442,6 @@ TIPS
     align-items: center;
   
   }
-}
+}*/
 
 

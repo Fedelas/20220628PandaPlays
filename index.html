@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8"> <!-- hace que se vea carateres especiales, ñ y tildes -->  
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibles con edge -->  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport: para poder adaptarlo al cel -->  
+    <meta charset="UTF-8"> <!-- hace que se vea carateres especiales, ñ y tildes -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibles con edge -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--viewport: para poder adaptarlo al cel -->
     <title>Panda plays</title>
     <link rel="stylesheet" href="estilos/stylesheet.css">
 </head>
-<body id="bodyGrilla">
 
+<body id="bodyGrilla">
+    <!-- INICIO HEADER-->
     <header class="header">
-        <section class="container container-nav"> <!-- hago un contenedor madre que se subdivide en logo a la izquierda y el searchBar y el nav a la derecha-->
+        <section class="container container-nav">
+            <!-- hago un contenedor madre que se subdivide en logo a la izquierda y el searchBar y el nav a la derecha-->
             <div class="logoIzquierdo-10">
                 <a href="index.html">
-                    <img src="multimedia/logoPandaPlays.png" alt="Logo Panda Plays" id="logo"> 
-                 </a>
+                    <img src="multimedia/logoPandaPlays.png" alt="Logo Panda Plays" id="logo">
+                </a>
             </div>
-            
+
             <div class="columnaDerecha-90">
                 <!-- Falta agregar search bar y el logo de usuario con el link a pagina de registros-->
-                
+
 
                 <nav>
                     <ul>
-                        <li><a href="paginas/pnpQueEs.html">PNP - Que es</a></li>
+                        <li><a href="paginas/pnpQueEs.html">PNP</a></li>
                         <li><a href="paginas/pnpQueEs.html" target="#juegos">JUEGOS</a></li>
                         <li><a href="paginas/tips.html">TIPS</a></li>
                         <li><a href="paginas/blog.html">BLOG</a></li>
                         <li><a href="https://www.paypal.com/donate/?hosted_button_id=U2X23U7RE8ZE2">DONACIONES</a></li>
-                    
-                    </ul> 
-                </nav> 
+
+                    </ul>
+                </nav>
 
 
             </div>
-            
+
         </section>
 
-        
+
     </header>
 
 
+    <!-- INICIO MAIN PAGE-->
 
-    
     <div class="page">
-           
+
         <section class="page__banner">
             <img src="multimedia/banner.png" alt="banner" class="page__banner banner__img">
         </section>
@@ -54,15 +58,18 @@
             <!-- Van a ir pasando distintos juegos-->
         </section>
     </div>
-    
-    <footer class="footer"> <!-- divido en 3  columnas: seguinos en, contacto y colabora y luego debajo el copyright-->
+
+    <!-- INICIO FOOTER-->
+
+    <footer class="footer">
+        <!-- divido en 3  columnas: seguinos en, contacto y colabora y luego debajo el copyright-->
         <div class="columna_uno--horizontal">
-            <div class="footer__columnasTres" >
+            <div class="footer__columnasTres">
                 <h3>Seguinos en</h3>
-                    <img src="multimedia/logoYOUTUBE.png" alt="Logo YOUTUBE" height="30">
-                    <img src="multimedia/logoIG.png" alt="Logo INSTAGRAM" height="30">
+                <img src="multimedia/logoYOUTUBE.png" alt="Logo YOUTUBE" height="30">
+                <img src="multimedia/logoIG.png" alt="Logo INSTAGRAM" height="30">
             </div>
-        
+
             <div class="footer__columnasTres">
                 <h3>Contacto</h3>
                 <a href="paginas/contacto.html">
@@ -74,22 +81,23 @@
                 <!-- Boton PAYPAL falta agregarlo a CSS como clase-->
                 <form action="https://www.paypal.com/donate" method="post" target="_top">
                     <input type="hidden" name="hosted_button_id" value="U2X23U7RE8ZE2" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit"
+                        title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
                 </form>
-                
+
             </div>
         </div>
-    
+
         <div class="footer__copyright">
             <h4>copyright--Federico Lasserre / Jun - 2022</h4>
         </div>
 
-   
-    </footer>    
 
-   
+    </footer>
 
-   
+
+
+
 </body>
 
 </html>
