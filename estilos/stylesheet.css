@@ -38,7 +38,7 @@ body {
   ;
   grid-template-rows:77px 1fr auto; 
   grid-template-columns: auto 80% auto; 
-  height: 100vh; /*para que me ocupe toda la pantalla*/
+  
 }
 
 
@@ -393,6 +393,25 @@ TIPS
 
 }
   
+/* --- ANIMACIONES ----*/
+.textoAnimadoDestacado{
+  animation-name: destacado;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes destacado{
+  from {color: #f2f2f2;}
+  to {color: rgb(4, 25, 107); font-weight: bold;}
+
+  }
+
+
+
+
+
+
 
 /*
   
