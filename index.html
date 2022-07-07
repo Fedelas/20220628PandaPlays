@@ -7,22 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--viewport: para poder adaptarlo al cel -->
     <title>Panda plays</title>
+    <link rel="stylesheet" href="estilos/bootstrap.min.css">
     <link rel="stylesheet" href="estilos/stylesheet.css">
 </head>
 
-<body id="bodyGrilla">
-    <!-- INICIO HEADER-->
-    <header class="header">
-        <section class="container container-nav">
-            <!-- hago un contenedor madre que se subdivide en logo a la izquierda y el searchBar y el nav a la derecha-->
-            <div class="logoIzquierdo-10">
+<body>
+    <header class="header container">
+    <!-- NAVBAR con logo-->
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+            <!-- logo-->
+            <a class="navbar-brand" href="#">
+                <img src="multimedia/logoPandaPlays.png" alt="LOGO" id="logo">
+              </a>
+
+
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="paginas/pnpQueEs.html">PNP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paginas/pnpQueEs.html">JUEGOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paginas/tips.html">TIPS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paginas/blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.paypal.com/donate/?hosted_button_id=U2X23U7RE8ZE2"><span class="textoAnimadoDestacado">DONACIONES</span></a></li>
+
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+
+    </header>
+
+
+
+
+
+
+    <!-- INICIO HEADER
+    <header class="header container"> <!--agrego clase row para Bootstrap
+        <section class="container-nav "> <!--le saco el container inicial
+            <!-- hago un contenedor madre que se subdivide en logo a la izquierda y el searchBar y el nav a la derecha-
+            <div class="col-12 col-md-3">
                 <a href="index.html">
                     <img src="multimedia/logoPandaPlays.png" alt="Logo Panda Plays" id="logo">
                 </a>
             </div>
 
-            <div class="columnaDerecha-90">
-                <!-- Falta agregar search bar y el logo de usuario con el link a pagina de registros-->
+            <div class="col-12 col-md-9">
+                <!-- Falta agregar search bar y el logo de usuario con el link a pagina de registros
 
 
                 <nav>
@@ -42,42 +94,44 @@
         </section>
 
 
-    </header>
+    </header>-->
 
 
     <!-- INICIO MAIN PAGE-->
 
-    <div class="page">
+    <div class="page container"> <!--agrego clase row para Bootstrap-->
 
-        <section class="page__banner">
-            <img src="multimedia/banner.png" alt="banner" class="page__banner banner__img">
+        <section class="row">
+            <img src="multimedia/banner.png" alt="banner" class="page__banner banner__img col-12">
         </section>
 
-        <section class="page__columnaUnica">
-            <h2>NOVEDADES</h2>
-            <!-- Van a ir pasando distintos juegos-->
+        <section class="row">
+            <div class="col-12">
+                <h2 class="h2">NOVEDADES</h2>
+                <!-- Van a ir pasando distintos juegos-->
+            </div>
         </section>
     </div>
 
     <!-- INICIO FOOTER-->
 
-    <footer class="footer">
+    <footer class="container">
         <!-- divido en 3  columnas: seguinos en, contacto y colabora y luego debajo el copyright-->
-        <div class="columna_uno--horizontal">
-            <div class="footer__columnasTres">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
                 <h3>Seguinos en</h3>
                 <img src="multimedia/logoYOUTUBE.png" alt="Logo YOUTUBE" height="30">
                 <img src="multimedia/logoIG.png" alt="Logo INSTAGRAM" height="30">
             </div>
 
-            <div class="footer__columnasTres">
+            <div class="col-md-4 col-sm-12">
                 <h3>Contacto</h3>
                 <a href="paginas/contacto.html">
                     <img src="multimedia/iconoContacto.png" alt="Link Contacto">
                 </a>
             </div>
 
-            <div class=" footer__columnasTres">
+            <div class="col-md-4 col-sm-12">
                 <!-- Boton PAYPAL falta agregarlo a CSS como clase-->
                 <form action="https://www.paypal.com/donate" method="post" target="_top">
                     <input type="hidden" name="hosted_button_id" value="U2X23U7RE8ZE2" />
@@ -96,7 +150,7 @@
     </footer>
 
 
-
+    <script src="js/bootstrap.min.js"></script>  <!-- Agrego script js bootstrap-->
 
 </body>
 

@@ -13,7 +13,8 @@
 /* COLORES --- YA CHEQUADOS QUE NO DAN CONFLICTO CON DALTONISMO*/
 /*
 { color: #5204BF; } nav
-{ color: #3C038C; } hover
+{ color: 
+  ; } hover
 { color: #260259; } para fondo, logo e iconos 
 { color: #05C7F2; } para bordes
 { color: #BF1111; } para alerta */
@@ -101,6 +102,7 @@ body {
 .container {
   width: auto;
   margin: 0 auto;
+  background-color: white;
 
 }
 
@@ -109,6 +111,10 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+
+
+
 
 
 
@@ -161,7 +167,19 @@ nav li a:hover{
   padding: 20px 11px;
 }
 
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: white; 
+} 
 
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+
+.btn-outline-success {
+  color: white;
+  background-color: #260259;
+}
 
 /*------------------------------
  FOOTER
@@ -305,17 +323,17 @@ BLOG
 TIPS
 ---------------------------*/
 
-/*toma la clase page y crea un nuevo elemento: columnaDos, esto despues se va a ver modificado con el uso de flex*/
+/*toma la clase page y crea un nuevo elemento: columnaDos, esto despues se va a ver modificado con el uso de flex
 .page__columnaUnica--divididaEnDos{
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 20px;
-}
+}*/
   
 
 
-/* TABLET RD */
+/* TABLET RD 
 @media screen and (max-width: 767px){
   #bodyGrilla{
       grid-template-columns: 1fr;
@@ -360,13 +378,13 @@ TIPS
 
 
 
-}
+}*/
 
 
 
 
 
-/* CELULAR RD */
+/* CELULAR RD 
 @media screen and (max-width: 500px){
   .nav ul li{
     padding: 0px;
@@ -375,7 +393,7 @@ TIPS
  
 
   .page__banner{
-    display: none; /*Voy a ocultar el banner*/
+    display: none; /*Voy a ocultar el banner
   }
 
 
@@ -398,7 +416,7 @@ TIPS
     align-items: center;
   }
 
-}
+}*/
   
 /* --- ANIMACIONES ----*/
 .textoAnimadoDestacado{
