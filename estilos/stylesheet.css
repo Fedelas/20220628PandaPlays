@@ -214,9 +214,14 @@ nav li a:hover{
     
 }
 
+.footer__div--padding{
+  padding-top:25px;
+}
+
 .footer__copyright{
-  display: inline-block;
+  /*display: inline-block;*/
   text-align: center;
+  padding-top: 25px;
   
 }
 
