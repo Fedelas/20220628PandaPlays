@@ -1,0 +1,25 @@
+{
+  "name": "desarrollo-web",
+  "version": "1.0.0",
+  "description": "Proyecto coderhouse\r La pagina pretende mostrar juegos de tipo PNP y dar así divulgación a los mismos.\r En este momento se encuentra en desarrollo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss estilos/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fedelas/20220628PandaPlays.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fedelas/20220628PandaPlays/issues"
+  },
+  "homepage": "https://github.com/Fedelas/20220628PandaPlays#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
