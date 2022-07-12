@@ -46,13 +46,13 @@
                             <a class="nav-link"
                                 href="https://www.paypal.com/donate/?hosted_button_id=U2X23U7RE8ZE2"><span
                                     class="textoAnimadoDestacado">DONACIONES</span></a>
-                        </li>-->
+                        </li>
 
 
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder=" " aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
@@ -63,98 +63,135 @@
 
 
 
-    
+
 
 
 
     <!-- INICIO MAIN PAGE-->
-    <div class="page">
+    <div class="page container">
 
-        <section class="page__columnaUnica">
+        <section class="row">
             <h1 class="page__titulo">CONTACTANOS</h1>
         </section>
 
 
-        <section class="page__columnaUnica--centradaConPadding">
-            <div class="columnaFormulario">
-                <div class="col-10">
-                    <label for="nombreYApellido">Nombre:</label>
+        <form class="formPadding">
+            <div class="row d-flex justify-content-center">
+                <div class="form-group col-md-4 form-groupPadding">
+                    <label for="inputNombre">Nombre:</label>
+                    <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
                 </div>
-                <div class="col-90">
-                    <input type="text" placeholder="Nombre y apellido" name="nombreYApellido">
+                <div class="form-group col-md-4 form-groupPadding">
+                    <label for="inputApellido">Apellido</label>
+                    <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
                 </div>
-            </div>
-            <div class="columnaFormulario">
-                <div class="col-10">
-                    <label for="email">Correo:</label>
+                <div class="form-group col-md-8 form-groupPadding">
+                    <label for="inputEmail">Correo</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                 </div>
-                <div class="col-90">
-                    <input type="email" placeholder="correo electronico" name="email">
-                </div>
-            </div>
-            <div class="columnaFormulario">
-                <div class="col-10">
-                    <label for="juego">Juego</label>
-                </div>
-                <div class="col-90">
-                    <select id="JuegoElegido" name="Juegos">
+                <div class="form-group col-md-8 form-groupPadding">
+                    <label for="inputJuego">Juego</label>
+                    <select id="inputJuego" class="form-control">
+                        <option selected>Seleccionar juego</option>
                         <option value="Juego1">Juego 1</option>
                         <option value="Juego2">Juego 2</option>
                         <option value="Juego3">Juego 3</option>
                     </select>
                 </div>
+                <div class="form-group col-md-8 form-groupPadding">
+                    <textarea class="form-control" id="formContactoTextArea" rows="3"
+                        placeholder="Esbribi tu consulta"></textarea>
+                </div>
+
+                <div class="form-group col-md-8 text-center form-groupPadding">
+                    <button type="reset" class="btn btn-secondary">Borrar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
             </div>
 
-            <div class="columnaFormulario">
-                <textarea placeholder="Esbribi tu consulta"></textarea>
-            </div>
+        </form>
 
-            <br>
-            <input type="reset" value="BORRAR">
-            <input type="submit" value="ENVIAR">
-            </form>
+        <section class="row">
+
+            <h2 class="h2">NOVEDADES</h2>
+            <div class="container">
+                <div class="card-group">
+                    <div class="card">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
 
-        <section class="page__columnaUnica">
-            <h2>NOVEDADES</h2>
-            <!-- Van a ir pasando distintos juegos-->
-        </section>
     </div>
 
 
     <!-- INICIO FOOTER-->
 
-    <footer class="footer">
+    <footer class="container">
         <!-- divido en 3  columnas: seguinos en, contacto y colabora y luego debajo el copyright-->
-        <div class="columna_uno--horizontal">
-            <div class="footer__columnasTres">
-                <h3>Seguinos en</h3>
-                <img src="../multimedia/logoYOUTUBE.png" alt="Logo YOUTUBE" height="30">
-                <img src="../multimedia/logoIG.png" alt="Logo INSTAGRAM" height="30">
+        <div class="row d-flex justify-content-md-evenly d-flex align-items-md-center">
+
+            <div class="col-md-3 col-sm-12 footer__div--padding">
+                <h3 class="d-flex justify-content-center">Seguinos en</h3>
+                <div class="d-flex justify-content-center">
+                    <img src="../multimedia/logoYOUTUBE.png" alt="Logo YOUTUBE" height="30">
+                    <img src="../multimedia/logoIG.png" alt="Logo INSTAGRAM" height="30">
+                </div>
+
             </div>
 
-            <div class="footer__columnasTres">
-                <h3>Contacto</h3>
-                <a href="contacto.html">
-                    <img src="../multimedia/iconoContacto.png" alt="Link Contacto">
+            <div class="col-md-3 col-sm-12 footer__div--padding">
+                <h3 class="d-flex justify-content-center">Contacto</h3>
+                <a href="contacto.html" class="d-flex justify-content-center">
+                    <img src="../multimedia/iconoContacto.png" alt="Link Contacto" height="30">
                 </a>
             </div>
 
-            <div class=" footer__columnasTres">
+            <div class="col-md-3 col-sm-12 footer__div--padding">
                 <!-- Boton PAYPAL falta agregarlo a CSS como clase-->
-                <form action="https://www.paypal.com/donate" method="post" target="_top">
-                    <input type="hidden" name="hosted_button_id" value="U2X23U7RE8ZE2" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit"
-                        title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                </form>
+                <div class="d-flex justify-content-center">
+                    <form action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="hidden" name="hosted_button_id" value="U2X23U7RE8ZE2" />
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                            name="submit" title="PayPal - The safer, easier way to pay online!"
+                            alt="Donate with PayPal button" />
+                    </form>
+                </div>
 
             </div>
+
         </div>
 
-        <div class="footer__copyright">
-            <h4>copyright--Federico Lasserre / Jun - 2022</h4>
+        <div class="footer__copyright d-flex justify-content-center">
+            <h4>copyright--Federico Lasserre / Jul - 2022</h4>
         </div>
 
     </footer>
