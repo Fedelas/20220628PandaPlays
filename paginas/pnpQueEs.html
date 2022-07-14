@@ -7,132 +7,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--viewport: para poder adaptarlo al cel -->
     <title>Panda plays</title>
+    <link rel="stylesheet" href="../estilos/bootstrap.min.css">
     <link rel="stylesheet" href="../estilos/stylesheet.css">
 </head>
 
+<body>
+    <header class="header container">
+        <!-- NAVBAR con logo-->
 
-<body id="bodyGrilla">
-
-    <!-- INICIO HEADER-->
-    <header class="header">
-        <section class="container container-nav">
-            <!-- hago un contenedor madre que se subdivide en logo a la izquierda y el searchBar y el nav a la derecha-->
-            <div class="logoIzquierdo-10">
-                <a href="../index.html">
-                    <img src="../multimedia/logoPandaPlays.png" alt="Logo Panda Plays" id="logo">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <!-- logo-->
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../multimedia/logoPandaPlays.png" alt="LOGO" id="logo">
                 </a>
-            </div>
-
-            <div class="columnaDerecha-90">
-                <!-- Falta agregar search bar y el logo de usuario con el link a pagina de registros-->
-
-
-                <nav>
-                    <ul>
-                        <li><a href="pnpQueEs.html">PNP</a></li>
-                        <li><a href="pnpQueEs.html" target="#juegos">JUEGOS</a></li>
-                        <li><a href="tips.html">TIPS</a></li>
-                        <li><a href="blog.html">BLOG</a></li>
-                        <li><a href="https://www.paypal.com/donate/?hosted_button_id=U2X23U7RE8ZE2"><span class="textoAnimadoDestacado">DONACIONES</span></a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pnpQueEs.html">PNP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pnpQueEs.html">JUEGOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tips.html">TIPS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="https://www.paypal.com/donate/?hosted_button_id=U2X23U7RE8ZE2"><span
+                                    class="textoAnimadoDestacado">DONACIONES</span></a>
+                        </li>
 
                     </ul>
-                </nav>
-
-
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder=" " aria-label="Search">
+                        <button class="btn btn-outline-success" type="Buscar">Search</button>
+                    </form>
+                </div>
             </div>
-
-        </section>
-
+        </nav>
 
     </header>
 
-
-
     <!-- INICIO MAIN PAGE-->
-    <div class="page">
+    <div class="page container">
+        <section class="row">
+            <h1 class="page__titulo">PNP ¿QU&Eacute; ES?</h1>
+            <section >
 
-        <h1 class="page__titulo">PNP ¿QU&Eacute; ES?</h1>
-        <section class="page__columnaUnica">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi iusto natus quae similique rerum
+                    libero
+                    architecto, veniam ad ipsum iste, tenetur dolores deleniti obcaecati pariatur voluptate vitae? Odio,
+                    excepturi molestias.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nam magni asperiores, dicta
+                    pariatur
+                    iure, facere fugiat veritatis, nisi quos similique at culpa molestiae voluptatum veniam qui?
+                    Incidunt,
+                    earum quibusdam.</p>
+            </section>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi iusto natus quae similique rerum libero
-                architecto, veniam ad ipsum iste, tenetur dolores deleniti obcaecati pariatur voluptate vitae? Odio,
-                excepturi molestias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nam magni asperiores, dicta pariatur
-                iure, facere fugiat veritatis, nisi quos similique at culpa molestiae voluptatum veniam qui? Incidunt,
-                earum quibusdam.</p>
-        </section>
+            <section id="juegos">
+                <h2 class="page__tituloSecciones">JUEGOS</h2>
+                <!-- Van a ir pasando distintos juegos-->
+                <table class="table">
+                    <tr>
+                        <!-- fila header-->
+                        <th>JUEGO</th>
+                        <th>CATEGORIA</th>
+                        <th>DESCRIPCION</th>
+                    </tr>
+                    <tr>
+                        <!-- fila 1-->
+                        <td>
+                            <img src="../multimedia/juegos/juego1.png" alt="juego 1" height="60">
+                            <h3>Juego 1</h3>
+                        </td>
 
-        <section class="page__columnaUnica" id="juegos">
-            <h2 class="page__tituloSecciones">JUEGOS</h2>
-            <!-- Van a ir pasando distintos juegos-->
-            <table class="table">
-                <tr>
-                    <!-- fila header-->
-                    <th>JUEGO</th>
-                    <th>CATEGORIA</th>
-                    <th>DESCRIPCION</th>
-                </tr>
-                <tr>
-                    <!-- fila 1-->
-                    <td>
-                        <img src="../multimedia/juegos/juego1.png" alt="juego 1" height="60">
-                        <h3>Juego 1</h3>
-                    </td>
+                        <td>Categoria 1</td>
+                        <td>Descripcion 1</td>
+                    </tr>
+                    <tr>
+                        <!-- fila 2-->
+                        <td>
+                            <img src="../multimedia/juegos/juego2.png" alt="juego 2" height="60">
+                            <h3>Juego 2</h3>
+                        </td>
+                        <td>Categoria 2</td>
+                        <td>Descripcion 2</td>
+                    </tr>
 
-                    <td>Categoria 1</td>
-                    <td>Descripcion 1</td>
-                </tr>
-                <tr>
-                    <!-- fila 2-->
-                    <td>
-                        <img src="../multimedia/juegos/juego2.png" alt="juego 2" height="60">
-                        <h3>Juego 2</h3>
-                    </td>
-                    <td>Categoria 2</td>
-                    <td>Descripcion 2</td>
-                </tr>
-
-            </table>
-
-        </section>
-
+                </table>
+            </section>
 
     </div>
 
 
+
+
     <!-- INICIO FOOTER-->
-    <footer class="footer">
+
+    <footer class="container">
         <!-- divido en 3  columnas: seguinos en, contacto y colabora y luego debajo el copyright-->
-        <div class="columna_uno--horizontal">
-            <div class="footer__columnasTres">
-                <h3>Seguinos en</h3>
-                <img src="../multimedia/logoYOUTUBE.png" alt="Logo YOUTUBE" height="30">
-                <img src="../multimedia/logoIG.png" alt="Logo INSTAGRAM" height="30">
+        <div class="row d-flex justify-content-md-evenly d-flex align-items-md-center">
+
+            <div class="col-md-3 col-sm-12 footer__div--padding">
+                <h3 class="d-flex justify-content-center">Seguinos en</h3>
+                <div class="d-flex justify-content-center">
+                    <img src="../multimedia/logoYOUTUBE.png" alt="Logo YOUTUBE" height="30">
+                    <img src="../multimedia/logoIG.png" alt="Logo INSTAGRAM" height="30">
+                </div>
+
             </div>
 
-            <div class="footer__columnasTres">
-                <h3>Contacto</h3>
-                <a href="contacto.html">
-                    <img src="../multimedia/iconoContacto.png" alt="Link Contacto">
+            <div class="col-md-3 col-sm-12 footer__div--padding">
+                <h3 class="d-flex justify-content-center">Contacto</h3>
+                <a href="contacto.html" class="d-flex justify-content-center">
+                    <img src="../multimedia/iconoContacto.png" alt="Link Contacto" height="30">
                 </a>
             </div>
 
-            <div class=" footer__columnasTres">
+            <div class="col-md-3 col-sm-12 footer__div--padding">
                 <!-- Boton PAYPAL falta agregarlo a CSS como clase-->
-                <form action="https://www.paypal.com/donate" method="post" target="_top">
-                    <input type="hidden" name="hosted_button_id" value="U2X23U7RE8ZE2" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit"
-                        title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                </form>
+                <div class="d-flex justify-content-center">
+                    <form action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="hidden" name="hosted_button_id" value="U2X23U7RE8ZE2" />
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                            name="submit" title="PayPal - The safer, easier way to pay online!"
+                            alt="Donate with PayPal button" />
+                    </form>
+                </div>
 
             </div>
+
         </div>
 
-        <div class="footer__copyright">
-            <h4>copyright--Federico Lasserre / Jun - 2022</h4>
+        <div class="footer__copyright d-flex justify-content-center">
+            <h4>copyright--Federico Lasserre / Jul - 2022</h4>
         </div>
+
     </footer>
+
+    <script src="../js/bootstrap.min.js"></script> <!-- Agrego script js bootstrap-->
 
 </body>
 
 </html>
+
