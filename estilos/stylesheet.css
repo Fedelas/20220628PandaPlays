@@ -160,7 +160,7 @@ background-color: #3C038C;
 padding: 20px 11px;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
 color: white; 
 } 
 
