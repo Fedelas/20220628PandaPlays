@@ -6,18 +6,20 @@
 { color: #260259; } para fondo, logo e iconos 
 { color: #05C7F2; } para bordes
 { color: #BF1111; } para alerta */
-.button-basic, .button-report, .button-submit {
+.button-basic, .button-reset, .button-submit {
   border: none;
-  padding: 15px 30px;
+  border-radius: 5px;
+  padding: 10px 20px;
   text-align: center;
   font-size: 16px;
   cursor: pointer; }
 
-.button-report {
-  background-color: red; }
+.button-reset {
+  background-color: #260259;
+  color: white; }
 
 .button-submit {
-  background-color: green;
+  background-color: #5204BF;
   color: white; }
 
 body {
@@ -26,6 +28,13 @@ body {
   font-size: 100%;
   /*BACKGROUND*/
   background-image: linear-gradient(#05C7F2, #260259); }
+
+/* TABLET RD*/
+/*CLASE PARA QUE EL TEXTO SE SEPARE*/
+@media screen and (max-width: 760px) {
+  .separacionLineas {
+    font-size: 15px;
+    line-height: 2; } }
 
 /*------------------------------
 ENCABEZADO
@@ -105,3 +114,22 @@ nav {
   to {
     color: #b5bee1;
     font-weight: bold; } }
+
+/*---- FORUM ----*/
+/*Creamos el bucle para usar los valores del mapa*/
+.fondo--rojo {
+  background-color: #ff0000a1; }
+
+.fondo--verde {
+  background-color: #00ff1a33; }
+
+.fondo--azul {
+  background-color: #0000ff57; }
+
+.avatar {
+  height: 70px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 0.5em; }
+  .avatar:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6); }
