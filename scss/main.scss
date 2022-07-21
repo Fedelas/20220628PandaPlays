@@ -1,4 +1,5 @@
 @import "colores";
+@import "botones";
 
 body {
     /* ESTILO DE FUENTES*/
@@ -38,7 +39,7 @@ ENCABEZADO
 
 /*NAV BAR*/
 nav {
-    background-color: #5204BF;
+    background-color: $primary-color;
     text-align: right;
     padding: 20px;
     position: relative;

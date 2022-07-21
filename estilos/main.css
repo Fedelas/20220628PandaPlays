@@ -6,6 +6,20 @@
 { color: #260259; } para fondo, logo e iconos 
 { color: #05C7F2; } para bordes
 { color: #BF1111; } para alerta */
+.button-basic, .button-report, .button-submit {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer; }
+
+.button-report {
+  background-color: red; }
+
+.button-submit {
+  background-color: green;
+  color: white; }
+
 body {
   /* ESTILO DE FUENTES*/
   font-family: Arial, Helvetica, sans-serif;
