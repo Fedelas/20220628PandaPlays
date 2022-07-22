@@ -12,13 +12,15 @@ body {
 }
 
 
-/* TABLET RD*/ /*CLASE PARA QUE EL TEXTO SE SEPARE*/
-@media screen and (max-width: 760px){
-    .separacionLineas{
+/* TABLET RD*/
+/*CLASE PARA QUE EL TEXTO SE SEPARE*/
+@media screen and (max-width: 760px) {
+    .separacionLineas {
         @include separacionLineas(15px, 30px);
         font-size: map-get($font-sizes, "small");
     }
 }
+
 
 
 /*------------------------------
@@ -70,7 +72,7 @@ nav {
             &:hover {
                 background-color: $secondary-color;
                 padding: 20px 11px;
-                color:white !important;
+                color: white !important;
             }
         }
     }
@@ -81,8 +83,8 @@ nav {
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
-    color:white;
-   }
+    color: white;
+}
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
@@ -104,7 +106,8 @@ nav {
     overflow: hidden;
     background-color: white;
     border-radius: 0.5em;
-    &:hover{
+
+    &:hover {
         box-shadow: 0 2px 10px 0 rgba($color: black, $alpha: 0.6);
     }
 }
@@ -117,7 +120,7 @@ nav {
     background-color: white;
 }
 
-.row{
+.row {
     padding-top: 15px;
 }
 
@@ -143,16 +146,19 @@ nav {
 
 
 /*---- FORUM ----*/
-$paletaDeColores: ( /*color del usuario */
-        rojo: #ff0000a1,
-        verde: #00ff1a33,
-        azul: #0000ff57,
-); 
+$paletaDeColores: (
+    /*color del usuario */
+    rojo: #ff0000a1,
+    verde: #00ff1a33,
+    azul: #0000ff57,
+);
+
 /*Creamos el bucle para usar los valores del mapa*/
-@each $colorSeleccionado, $color in $paletaDeColores {
-   .fondo--#{$colorSeleccionado} {
-       background-color: $color;
-   }
+@each $colorSeleccionado,
+$color in $paletaDeColores {
+    .fondo--#{$colorSeleccionado} {
+        background-color: $color;
+    }
 }
 
 
@@ -161,7 +167,8 @@ $paletaDeColores: ( /*color del usuario */
     overflow: hidden;
     background-color: white;
     border-radius: 0.5em;
-    &:hover{
+
+    &:hover {
         box-shadow: 0 2px 10px 0 rgba($color: black, $alpha: 0.6);
     }
 }
