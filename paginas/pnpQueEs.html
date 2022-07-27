@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--viewport: para poder adaptarlo al cel -->
     <title>JUEGOS PRINT AND PLAY - QUE SON</title>
-    <meta name="description" content="Acá encontrarás las ultimas novedades y los clásicos. Selecciona de una variedad infinita de juegos">
-    <meta name="keywords"  content="Print and Play, Juegos, Juegos de mesa, Novedades">
+    <meta name="description"
+        content="Acá encontrarás las ultimas novedades y los clásicos. Selecciona de una variedad infinita de juegos">
+    <meta name="keywords" content="Print and Play, Juegos, Juegos de mesa, Novedades">
+    <link href="https://fonts.googleapis.com/css?family=Bree Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="../estilos/bootstrap.min.css">
     <link rel="stylesheet" href="../estilos/main.css">
+
 </head>
 
 <body>
@@ -63,103 +67,177 @@
     <div class="page container">
         <section class="row">
             <h1 class="page__titulo">PNP ¿QU&Eacute; ES?</h1>
-            <section >
+            <section>
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi iusto natus quae similique rerum
-                    libero
-                    architecto, veniam ad ipsum iste, tenetur dolores deleniti obcaecati pariatur voluptate vitae? Odio,
-                    excepturi molestias.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nam magni asperiores, dicta
-                    pariatur
-                    iure, facere fugiat veritatis, nisi quos similique at culpa molestiae voluptatum veniam qui?
-                    Incidunt,
-                    earum quibusdam.</p>
+                <p>Una versión <strong>Print & Play o PNP</strong> de un juego es un juego que no se publica en forma
+                    física.
+                    En cambio, las reglas y los componentes están disponibles en un formato digital, y los
+                    jugadores pueden imprimirlos en casa o en una imprenta y ensamblarlos ellos mismos.</p>
             </section>
 
             <section id="juegos">
-                <h2 class="page__tituloSecciones">JUEGOS</h2>
-                <!-- Van a ir pasando distintos juegos-->
-                <table class="table">
-                    <tr>
-                        <!-- fila header-->
-                        <th>JUEGO</th>
-                        <th>CATEGORIA</th>
-                        <th>DESCRIPCION</th>
-                    </tr>
-                    <tr>
-                        <!-- fila 1-->
-                        <td>
-                            <img src="../multimedia/juegos/juego1.png" alt="juego 1" height="60">
-                            <h3>Juego 1</h3>
-                        </td>
+                <div class="tituloSeccion">
+                    <h2 class="h2">JUEGOS</h2>
+                </div>
 
-                        <td>Categoria 1</td>
-                        <td>Descripcion 1</td>
-                    </tr>
-                    <tr>
-                        <!-- fila 2-->
-                        <td>
-                            <img src="../multimedia/juegos/juego2.png" alt="juego 2" height="60">
-                            <h3>Juego 2</h3>
-                        </td>
-                        <td>Categoria 2</td>
-                        <td>Descripcion 2</td>
-                    </tr>
+                <!-- Van a ir pasando distintos juegos-->
+                <section id="selectoresTabla" class="btn-toolbar" role="toolbar">
+                    <div class="btn-group mr-2">
+                        <button class="btn btn-default" id="Todos">Todos</button>
+                        <button class="btn btn-default" id="Solitario">Solitario</button>
+                        <button class="btn btn-default" id="Duo">Duo</button>
+                        <button class="btn btn-default" id="Hasta 5 Personas">1-5</button>
+                        <button class="btn btn-default" id="Party game">Party Game</button>
+                    </div>
+                </section>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <!-- fila header-->
+                            <th>JUEGO</th>
+                            <th>DESCRIPCION</th>
+                        </tr>
+                    </thead>
+                    <tbody class="searchable">
+                        <tr>
+                            <!-- fila 1-->
+                            <td>
+                                <img src="../multimedia/juegos/concept.png" alt="Nombre del juego: concept"
+                                    height="100px">
+
+                            </td>
+                            <td class="ocultar">Party Game</td>
+                            <td>
+                                <h3>Concept</h3>
+                                <p>En Concept, tu objetivo es adivinar palabras a través de la asociación de iconos.
+                                    Un equipo de dos jugadores, vecinos en la mesa, elige una palabra o frase que los
+                                    otros jugadores
+                                    necesitan adivinar. Actuando juntos, este equipo coloca piezas juiciosamente en los
+                                    iconos disponibles
+                                    en el tablero de juego.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- fila 2-->
+                            <td>
+                                <img src="../multimedia/juegos/dobble.png" alt="Nombre del juego: dobble" height="100px">
+
+                            </td>
+                            <td class="ocultar">1-5</td>
+                            <td>
+                                <h3>Dobble</h3>
+                                <p>Cada tarjeta cuenta con ocho símbolos diferentes, con los símbolos que varían en
+                                    tamaño de una carta a la siguiente. Dos cartas cualesquiera tienen exactamente un
+                                    símbolo en común. Para el básico ¡Pruébalo! juego, revelar una carta, luego otra.
+                                    Quien ve el símbolo en común en ambas cartas reclama la primera carta, luego se
+                                    revela otra carta para que los jugadores la busquen, y así sucesivamente.
+                                    ¡Quien haya recogido la mayor cantidad de cartas cuando se agote la baraja de 55
+                                    cartas gana!</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- fila 3-->
+                            <td>
+                                <img src="../multimedia/juegos/bandido.jpg" alt="Nombre del juego: bandido" height="100px">
+
+                            </td>
+                            <td class="ocultar">Duo</td>
+                            <td>
+                                <h3>Bandido</h3>
+                                <p>Un prisionero de seguridad ligera está tratando de escapar a través de túneles
+                                    que comienzan debajo de su celda. ¿Serás capaz de unir fuerzas y cartas para
+                                    detenerlo? Bandido es un juego cooperativo de estrategia y observación para toda
+                                    la familia.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- fila 4-->
+                            <td>
+                                <img src="../multimedia/juegos/18FL.png" alt="Nombre del juego: 18FL" height="100px">
+
+                            </td>
+                            <td class="ocultar">1-5</td>
+                            <td>
+                                <h3>18FL</h3>
+                                <p>18FL es un juego de 18xx ambientado en Florida. 18FL es un pequeño juego de 18xx,
+                                    al estilo del "one-state" de Mark Derrick. juegos 18GA y 18AL, y está pensado como
+                                    un cambio de los juegos 18xx más robustos que se
+                                    juegan a menudo.Espero que también pueda servir efectivamente como un "juego de
+                                    enseñanza", permitiendo a los nuevos jugadores una introducción relativamente
+                                    benigna a la familia de juegos 18xx.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- fila 5-->
+                            <td>
+                                <img src="../multimedia/juegos/Grimm.PNG" alt="Nombre del juego: Grimm" height="100px">
+
+                            </td>
+                            <td class="ocultar">1-5</td>
+                            <td>
+                                <h3>Grimm</h3>
+                                <p>Un juego cooperativo modular de aventura / supervivencia / tablero ambientado en una
+                                    cruda narración germánica del mundo de los Hermanos Grimm. Diseñado para eludir
+                                    contadores, fichas, folletos, dados, el juego utiliza solo 150 cartas de doble cara
+                                    para crear, explorar, luchar y mejorar.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+
 
                 </table>
             </section>
 
-    </div>
+            <!-- INICIO FOOTER-->
 
+            <footer class="container">
+                <!-- divido en 3  columnas: seguinos en, contacto y colabora y luego debajo el copyright-->
+                <div class="row d-flex justify-content-md-evenly d-flex align-items-md-center">
 
+                    <div class="col-md-3 col-sm-12 footer__div--padding">
+                        <h3 class="d-flex justify-content-center">Seguinos en</h3>
+                        <div class="d-flex justify-content-center">
+                            <img src="../multimedia/logoYOUTUBE.png" alt="Logo YOUTUBE" height="30">
+                            <img src="../multimedia/logoIG.png" alt="Logo INSTAGRAM" height="30">
+                        </div>
 
+                    </div>
 
-    <!-- INICIO FOOTER-->
+                    <div class="col-md-3 col-sm-12 footer__div--padding">
+                        <h3 class="d-flex justify-content-center">Contacto</h3>
+                        <a href="contacto.html" class="d-flex justify-content-center">
+                            <img src="../multimedia/iconoContacto.png" alt="Link Contacto" height="30">
+                        </a>
+                    </div>
 
-    <footer class="container">
-        <!-- divido en 3  columnas: seguinos en, contacto y colabora y luego debajo el copyright-->
-        <div class="row d-flex justify-content-md-evenly d-flex align-items-md-center">
+                    <div class="col-md-3 col-sm-12 footer__div--padding">
+                        <!-- Boton PAYPAL falta agregarlo a CSS como clase-->
+                        <div class="d-flex justify-content-center">
+                            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                                <input type="hidden" name="hosted_button_id" value="U2X23U7RE8ZE2" />
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                                    name="submit" title="PayPal - The safer, easier way to pay online!"
+                                    alt="Donate with PayPal button" />
+                            </form>
+                        </div>
 
-            <div class="col-md-3 col-sm-12 footer__div--padding">
-                <h3 class="d-flex justify-content-center">Seguinos en</h3>
-                <div class="d-flex justify-content-center">
-                    <img src="../multimedia/logoYOUTUBE.png" alt="Logo YOUTUBE" height="30">
-                    <img src="../multimedia/logoIG.png" alt="Logo INSTAGRAM" height="30">
+                    </div>
+
                 </div>
 
-            </div>
-
-            <div class="col-md-3 col-sm-12 footer__div--padding">
-                <h3 class="d-flex justify-content-center">Contacto</h3>
-                <a href="contacto.html" class="d-flex justify-content-center">
-                    <img src="../multimedia/iconoContacto.png" alt="Link Contacto" height="30">
-                </a>
-            </div>
-
-            <div class="col-md-3 col-sm-12 footer__div--padding">
-                <!-- Boton PAYPAL falta agregarlo a CSS como clase-->
-                <div class="d-flex justify-content-center">
-                    <form action="https://www.paypal.com/donate" method="post" target="_top">
-                        <input type="hidden" name="hosted_button_id" value="U2X23U7RE8ZE2" />
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-                            name="submit" title="PayPal - The safer, easier way to pay online!"
-                            alt="Donate with PayPal button" />
-                    </form>
+                <div class="footer__copyright d-flex justify-content-center">
+                    <h6>copyright--Federico Lasserre / Jul - 2022</h6>
                 </div>
 
-            </div>
+            </footer>
 
-        </div>
+            <script src="../js/bootstrap.min.js"></script> <!-- Agrego script js bootstrap-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-        <div class="footer__copyright d-flex justify-content-center">
-            <h4>copyright--Federico Lasserre / Jul - 2022</h4>
-        </div>
+            <script src="../js/filtroColumna.js"></script> <!-- Agrego script js de filtro de tabla-->
 
-    </footer>
 
-    <script src="../js/bootstrap.min.js"></script> <!-- Agrego script js bootstrap-->
 
 </body>
 
 </html>
-

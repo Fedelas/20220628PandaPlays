@@ -11,6 +11,30 @@ body {
         /*agrego gradiente */
 }
 
+.ocultar{
+    display: none;
+}
+
+.tituloSeccion {
+    display: flex;
+    width: 95%;
+    margin: 10px;
+    text-decoration: none;
+    /*font-family: 'Poppins', sans-serif;
+    font-size: 40px;*/
+    color: white;
+    background: $primary-color;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+
+    h2{
+        transform: skewX(15deg); 
+        padding-top: 2px;
+        margin-bottom: 0px;
+    }
+}
+
 
 /* TABLET RD*/
 /*CLASE PARA QUE EL TEXTO SE SEPARE*/
@@ -82,7 +106,7 @@ nav {
 
 
 .navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .show > .nav-link {
     color: white;
 }
 

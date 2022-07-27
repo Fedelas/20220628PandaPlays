@@ -1,20 +1,56 @@
-.button-basic  {
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
+.button-basic {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-reset {
+  @extend .button-basic;
+  background-color: $secondary-color;
+  color: white;
+}
+
+.button-submit {
+  @extend .button-basic;
+  background-color: $primary-color;
+  color: white;
+}
+
+.btn-toolbar {
+  justify-content: flex-end;
+}
+
+.btn-group {
+  background: $secondary-color;
+  border: 1px solid #ddd;
+  color: black;
+
+  &>.btn:focus {
+    background: #eee;
+    outline: none !important;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    border-radius: .25rem;
+
   }
-  
-  .button-reset  {
-    @extend .button-basic;
-    background-color:$secondary-color;
+
+  &>.btn:active {
+    background: #eee;
+    outline: none !important;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    border-radius: .25rem;
     color: white;
   }
-  
-  .button-submit  {
-    @extend .button-basic;
-    background-color: $primary-color;
-    color: white;
+}
+
+.btn {
+  color: white;
+
+  &:hover {
+    color: black;
   }
+}
