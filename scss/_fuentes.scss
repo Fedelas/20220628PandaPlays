@@ -1,3 +1,5 @@
+
+/* CODIGO PARA APLICAR EN LAS CARDS PARA SEPARAR EL TEXTO Y EVITAR QUE QUEDE MUY JUNTO*/
 $separacionLineas:1.2;
 
 
@@ -7,16 +9,22 @@ $separacionLineas:1.2;
 }
 
 
+$font-sizes: ("small": 14px, "normal": 16px);
 
-$font-sizes: ("small": 12px, "normal": 18px, "large": 24px);
+/* FUENTES*/
 
 
 h1{
     text-align:center;
     font-family: Bree Serif;
+    
 }
 
 h2{
     text-align:center;
     font-family: Montserrat;
+    
 }
+
+
+

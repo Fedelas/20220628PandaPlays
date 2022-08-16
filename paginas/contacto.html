@@ -77,32 +77,32 @@
         <form class="formPadding">
             <div class="row d-flex justify-content-center">
                 <div class="form-group col-md-4 form-groupPadding">
-                    <label for="inputNombre">Nombre:</label>
+                    <label for="inputNombre" class="padding-10">Nombre:</label>
                     <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
                 </div>
                 <div class="form-group col-md-4 form-groupPadding">
-                    <label for="inputApellido">Apellido</label>
+                    <label for="inputApellido" class="padding-10">Apellido</label>
                     <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
                 </div>
                 <div class="form-group col-md-8 form-groupPadding">
-                    <label for="inputEmail">Correo</label>
+                    <label for="inputEmail" class="padding-10">Correo</label>
                     <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                 </div>
                 <div class="form-group col-md-8 form-groupPadding">
-                    <label for="inputJuego">Juego</label>
+                    <label for="inputJuego" class="padding-10">Juego</label>
                     <select id="inputJuego" class="form-control">
                         <option selected>Seleccionar juego</option>
-                        <option value="Juego1">Juego 1</option>
-                        <option value="Juego2">Juego 2</option>
-                        <option value="Juego3">Juego 3</option>
+                        <option value="Juego1">Concept</option>
+                        <option value="Juego2">Bandido</option>
+                        <option value="Juego3">Grimmm</option>
                     </select>
                 </div>
-                <div class="form-group col-md-8 form-groupPadding">
+                <div class="form-group col-md-8 form-groupPadding padding-10">
                     <textarea class="form-control" id="formContactoTextArea" rows="3"
                         placeholder="Esbribi tu consulta"></textarea>
                 </div>
 
-                <div class="form-group col-md-8 text-center form-groupPadding">
+                <div class="form-group col-md-8 text-center form-groupPadding padding-10">
                     <button type="reset" class="button-reset">Borrar</button>
                     <button type="submit" class="button-submit">Enviar</button>
                 </div>
@@ -117,8 +117,10 @@
             <div class="container">
                 <div class="card-group">
                     <div class="card">
-                        <img class="card-img-top" src="../multimedia/juegos/concept.png"
-                            alt="Nombre del juego: concept">
+                        <a href="concept.html">
+                            <img class="card-img-top" src="../multimedia/juegos/concept.png"
+                                alt="Nombre del juego: concept">
+                        </a>
                         <div class="card-body">
                             <h5 class="card-title">CONCEPT</h5>
                             <p class="card-text separacionLineas">En Concept, tu objetivo es adivinar palabras a través
@@ -147,7 +149,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="../multimedia/juegos/bandido.jpg"
+                        <img class="card-img-top" src="../multimedia/juegos/bandido.png"
                             alt="Nombre del juego: bandido">
                         <div class="card-body">
                             <h5 class="card-title">BANDIDO</h5>
@@ -175,8 +177,8 @@
             <div class="col-md-3 col-sm-12 footer__div--padding">
                 <h3 class="d-flex justify-content-center">Seguinos en</h3>
                 <div class="d-flex justify-content-center">
-                    <img src="../multimedia/logoYOUTUBE.png" alt="Logo YOUTUBE" height="30">
-                    <img src="../multimedia/logoIG.png" alt="Logo INSTAGRAM" height="30">
+                    <img src="../multimedia/logoYOUTUBE.png" alt="Link a YOUTUBE" class="imagenFooter">
+                    <img src="../multimedia/logoIG.png" alt="Link a INSTAGRAM" class="imagenFooter">
                 </div>
 
             </div>
@@ -184,7 +186,7 @@
             <div class="col-md-3 col-sm-12 footer__div--padding">
                 <h3 class="d-flex justify-content-center">Contacto</h3>
                 <a href="contacto.html" class="d-flex justify-content-center">
-                    <img src="../multimedia/iconoContacto.png" alt="Link Contacto" height="30">
+                    <img src="../multimedia/iconoContacto.png" alt="Link Contacto" class="imagenFooter">
                 </a>
             </div>
 
